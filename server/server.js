@@ -19,7 +19,10 @@ await connectDB();
 await connectClouidnary();
 
 // allow origins
-const allowOrigins = ["http://localhost:5173"];
+const allowOrigins = [
+  "http://localhost:5173",
+  "https://greencart-mern.vercel.app",
+];
 
 // Middleware configuration
 app.use(express.json());
